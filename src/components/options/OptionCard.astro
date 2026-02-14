@@ -1,0 +1,38 @@
+---
+export interface Props {
+  href: string
+  image: string
+  title: string
+  subtitle: string
+  koreanText: string
+}
+
+const {
+  href,
+  image,
+  title,
+  subtitle,
+  koreanText,
+} = Astro.props
+---
+
+<a
+  href={href}
+  class="text-gray-300 bg-[#0F141C] rounded-md border border-gray-400 p-4 flex flex-col items-center justify-center gap-1 h-46"
+>
+  <picture class="size-16">
+    <img src={image} alt={title} class="h-full" />
+  </picture>
+
+  <span class="flex flex-col items-center">
+    <p class="font-bold text-sm tracking-wide h-4">{title}</p>
+
+    <p class="font-extralight text-gray-400 h-4 text-[12px] tracking-widest">
+      {subtitle}
+    </p>
+
+    <p class="font-medium text-[12px] font-nano h-4">
+      {koreanText}
+    </p>
+  </span>
+</a>
