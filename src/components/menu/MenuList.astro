@@ -1,0 +1,14 @@
+---
+import MenuItem from './MenuItem.astro'
+import type { MenuItemData } from './types'
+
+const { items } = Astro.props as {
+  items: MenuItemData[]
+}
+---
+
+<ul class="menu-list">
+  {items.map((item) => (
+    <MenuItem {...item} />
+  ))}
+</ul>

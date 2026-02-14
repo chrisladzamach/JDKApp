@@ -1,0 +1,22 @@
+---
+import MenuLayout from "../layouts/MenuLayout.astro";
+import MenuList from "../components/menu/MenuList.astro";
+
+const items = [
+  { label: "Joong Do Il Dan" },
+  { label: "joong Do I Dan" },
+  { label: "Joong Do Sam Dan" },
+  { label: "Joong Do Sa Dan" },
+  { label: "Joong Do O Dan" },
+  { label: "Won Il Dan" },
+  { label: "Won I San" },
+  { label: "Won Sam Dan" },
+  { label: "Won Sa Dan" },
+  { label: "Won O Dan" },
+  { label: "Ki Hap" },
+];
+---
+
+<MenuLayout title="Figuras sin armas" icon="/icons/figuras-sin-armas.png">
+  <MenuList items={items} />
+</MenuLayout>

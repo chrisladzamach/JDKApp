@@ -1,0 +1,20 @@
+---
+import MenuLayout from '../layouts/MenuLayout.astro';
+import MenuList from '../components/menu/MenuList.astro';
+
+const items = [
+  { label: 'Contra agarre lineal de muñeca' },
+  { label: 'Contra agarre cruzado de muñeca' },
+  { label: 'Puño contra puño' },
+  { label: 'Contra agarres por la espalda' },
+  { label: 'Patada contra puño' },
+  { label: 'Contra abrazos' },
+];
+---
+
+<MenuLayout
+  title="Defensa personal"
+  icon="/icons/defensa-personal.png"
+>
+  <MenuList items={items} />
+</MenuLayout>

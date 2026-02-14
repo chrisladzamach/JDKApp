@@ -1,0 +1,16 @@
+---
+import MenuLayout from "../layouts/MenuLayout.astro";
+import MenuList from "../components/menu/MenuList.astro";
+
+const items = [
+  { label: "Nunchaku sencillo" },
+  { label: "Nunchakus dobles" },
+  { label: "Jang Bong" },
+  { label: "Tang Bong" },
+  { label: "Mokkum" },
+];
+---
+
+<MenuLayout title="Básicos con armas" icon="/icons/basicos-con-armas.png">
+  <MenuList items={items} />
+</MenuLayout>

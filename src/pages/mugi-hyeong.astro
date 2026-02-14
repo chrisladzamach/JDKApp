@@ -1,0 +1,22 @@
+---
+import MenuLayout from "../layouts/MenuLayout.astro";
+import MenuList from "../components/menu/MenuList.astro";
+
+const items = [
+  { label: "I Chol Bong Il Dan" },
+  { label: "I Chol Bong I Dan" },
+  { label: "I Chol Bong Sam Dan" },
+  { label: "Jang Bong Il Dan" },
+  { label: "Jang Bong I San" },
+  { label: "Jang Bong Sam Dan" },
+  { label: "Jang Bong Sa Dan" },
+  { label: "Tang Bong Il Dan" },
+  { label: "Puche Il Dan" },
+  { label: "Puche I Dan" },
+  { label: "Chan Il Dan" },
+];
+---
+
+<MenuLayout title="Figuras con armas" icon="/icons/figuras-con-armas.png">
+  <MenuList items={items} />
+</MenuLayout>

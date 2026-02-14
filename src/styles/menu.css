@@ -1,0 +1,42 @@
+.menu-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  margin: 0.75rem;
+  border-radius: 12px;
+  background: linear-gradient(#111827, #020617);
+  border: 1px solid #475569;
+}
+
+.menu-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.bars {
+  display: flex;
+  gap: 6px;
+  width: 50%;
+}
+
+.bar {
+  height: 10px;
+  border-radius: 4px;
+}
+
+.menu-arrow {
+  opacity: 0.7;
+}

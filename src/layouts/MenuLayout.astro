@@ -1,0 +1,25 @@
+---
+import "../styles/global.css";
+import "../styles/menu.css";
+const { title, icon } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body class="bg-black text-zinc-300 h-screen w-auto">
+    <header class="bg-[#111827] menu-header p-4 flex justify-between gap-4">
+      <h1 class="text-2xl font-light text-yellow-300">{title}</h1>
+
+      {icon && <img src={icon} alt={`${title} icono`} class="menu-icon" />}
+    </header>
+
+    <main class="menu-content">
+      <slot />
+    </main>
+  </body>
+</html>

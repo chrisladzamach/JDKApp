@@ -1,0 +1,18 @@
+---
+import ProgramBars from './ProgramBars.astro'
+import type { MenuItemData } from './types'
+
+const {
+  label,
+  href = '#',
+  bars
+} = Astro.props as MenuItemData
+---
+
+<li class="menu-item">
+  <a href={href}>
+    <span class="menu-label">{label}</span>
+
+    {bars ? <ProgramBars bars={bars} /> : <span class="menu-arrow">▶</span>}
+  </a>
+</li>

@@ -1,0 +1,23 @@
+---
+import MenuLayout from "../layouts/MenuLayout.astro";
+import MenuList from "../components/menu/MenuList.astro";
+
+const items = [
+  { label: "Básico de cuadrado 1" },
+  { label: "Básico de cuadrado 2" },
+  { label: "Básico de cuadrado 3" },
+  { label: "Básico de cuadrado 4" },
+  { label: "Básico de cuadrado 5" },
+  { label: "Básico de hakdary" },
+  { label: "Básico de GeumGang 1" },
+  { label: "Básico de GeumGang 2" },
+  { label: "Básico de GeumGang 3" },
+  { label: "Básico de GeumGang 4" },
+  { label: "Básico de respiración 1" },
+  { label: "Básico de respiración 2" },
+];
+---
+
+<MenuLayout title="Básicos sin armas" icon="/icons/basicos-sin-armas.png">
+  <MenuList items={items} />
+</MenuLayout>

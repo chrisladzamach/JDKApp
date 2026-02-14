@@ -1,0 +1,37 @@
+---
+import MenuLayout from "../layouts/MenuLayout.astro";
+import MenuList from "../components/menu/MenuList.astro";
+
+const items = [
+  { label: "Blanco", bars: [{ color: "#ffffff", width: 100 }] },
+  { label: "Amarillo", bars: [{ color: "#ffff00", width: 100 }] },
+  { label: "Naranja", bars: [{ color: "#ff9900", width: 100 }] },
+  { label: "Verde", bars: [{ color: "#00aa00", width: 100 }] },
+  { label: "Azul", bars: [{ color: "#0000ff", width: 100 }] },
+  { label: "Púrpura", bars: [{ color: "#8000ff", width: 100 }] },
+  {
+    label: "Rojo marrón",
+    bars: [
+      { color: "#ff0000", width: 50 },
+      { color: "#6b3e00", width: 50 },
+    ],
+  },
+  { label: "Marrón", bars: [{ color: "#6b3e00", width: 100 }] },
+  {
+    label: "Marrón negro",
+    bars: [
+      { color: "#6b3e00", width: 50 },
+      { color: "#000000", width: 50 },
+    ],
+  },
+  { label: "Negro 1er Dan", bars: [{ color: "#000000", width: 100 }] },
+  { label: "Negro 2do Dan", bars: [{ color: "#000000", width: 100 }] },
+  { label: "Negro 3er Dan", bars: [{ color: "#000000", width: 100 }] },
+  { label: "Negro 4to Dan", bars: [{ color: "#000000", width: 100 }] },
+  { label: "Negro 5to Dan", bars: [{ color: "#000000", width: 100 }] },
+];
+---
+
+<MenuLayout title="Programa" icon="/icons/programa.png">
+  <MenuList items={items} />
+</MenuLayout>
